@@ -44,4 +44,13 @@ class Stocks extends CI_Controller
 		$this->load->view('products/index', $data);
 		$this->load->view('templates/footer');
 	}
+
+	public function delete()
+	{
+		$id=$this->input->post('stock_id');
+		$this->stock_model->stock_delete($id);
+		$this->session->set_flashdata('danger_message', 'Stock has been Deleted success !');
+		redirect('stocks');
+		redirect('products');
+	}
 }

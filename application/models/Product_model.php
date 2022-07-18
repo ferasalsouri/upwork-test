@@ -32,7 +32,7 @@ class Product_model extends CI_Model
 	public function get_stocks()
 	{
 		$this->db->order_by('title');
-		$query = $this->db->get('stocks');
+		$query = $this->db->get_where('stocks',['status'=>1]);
 		return $query->result_array();
 	}
 

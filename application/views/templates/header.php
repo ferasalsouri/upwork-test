@@ -55,3 +55,11 @@
 		echo '</div>';
 
 	endif; ?>
+	<?php if ($this->session->flashdata('danger_message')):
+
+		echo '<div class="alert alert-dismissible alert-danger">';
+		echo '	<button type="button" class="btn-close" data-bs-dismiss="alert"></button>';
+		echo $this->session->flashdata('danger_message');
+		echo '</div>';
+
+	endif; ?>

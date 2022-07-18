@@ -10,3 +10,6 @@ label{
 .product-image {
 	width: 100%;
 }
+li.list-group-item .d-flex .justify-content-between .align-items-center .inactive{
+	background-color: #f9e2f9ee;
+}

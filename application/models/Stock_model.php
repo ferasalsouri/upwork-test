@@ -33,4 +33,13 @@ class Stock_model extends CI_Model
 		return $query->row();
 	}
 
+	public function stock_delete($id)
+	{
+		$this->db->where('stock_id', $id);
+		$this->db->delete('products');
+		$this->db->where('id', $id);
+		$this->db->delete('stocks');
+		return true;
+
+	}
 }
