@@ -56,6 +56,7 @@ $route['products']= 'products';
 $route['products/create']= 'products/create';
 $route['products/update']= 'products/update';
 $route['products/(:any)']= 'products/view/$1';
+$route['exchange']= 'pages/exchanGerates_api';
 $route['default_controller'] = 'pages/view';
 $route['(:any)']= 'pages/view/$1';
 $route['404_override'] = '';
